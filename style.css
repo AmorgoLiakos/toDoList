@@ -1,0 +1,66 @@
+.intro {
+  text-align: center;
+  widows: 80%;
+  margin: 5% auto;
+}
+.container {
+  height: 500px;
+  width: 500px;
+  margin: 5% auto;
+  background: #000;
+  position: relative;
+  border-radius: 50%;
+}
+
+.newDiv {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  border-radius: 5%;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  font-size: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  animation: fadeOut 4s ease-in-out infinite;
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.newDiv:hover {
+  cursor: pointer;
+  animation: unset;
+  padding: 2%;
+  transform: scale(3);
+  line-height: unset;
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+  word-wrap: inherit;
+
+  z-index: 100;
+}
+
+.textArea {
+  height: 500px;
+  width: 500px;
+  margin: 3% auto;
+}
+
+#noteArea {
+  height: 100px;
+  width: 500px;
+}
